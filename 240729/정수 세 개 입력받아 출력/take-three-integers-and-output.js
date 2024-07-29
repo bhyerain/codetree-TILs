@@ -1,7 +1,10 @@
 const fs = require("fs")
 
-let input = fs.readFileSync(0).toString();
-let arr = input.split("\n");
-let [a, b] = arr[0].split(" ");
-let c = Number(arr[1]);
+let input = fs.readFileSync(0).toString().trim().split("\n");
+
+let arr = input[0].split(" ");
+let a = Number(arr[0]);
+let b = Number(arr[1]);
+let c = Number(input[1]);
+
 console.log(a, b, c);
