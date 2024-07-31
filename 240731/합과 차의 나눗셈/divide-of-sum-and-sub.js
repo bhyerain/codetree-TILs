@@ -7,8 +7,6 @@ let b = Number(input[1]);
 let x = a+b;
 let y = a-b;
 
-let result1 = parseInt(x/y);
-let result2 = x%y;
-result2 = result2.toFixed(2);
-let final = result1+result2;
-console.log(final);
+let result = x/y;
+
+console.log(result.toFixed(2));
